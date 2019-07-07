@@ -1,4 +1,4 @@
-# AdBlocking VPN Proxy Server (Pi-hole,Wireguard,Privoxy)
+# AdBlocking VPN Proxy Server (Pi-hole, Wireguard, Privoxy, Unbound)
 Pi-hole, Wireguard and Privoxy. Providing an ad-blocking VPN protected proxy server.
 
 Build your own internal ad blocker - also serving as a VPN protected proxy server. Give you anonmous, ad-free internet access across your home network. 
@@ -20,10 +20,20 @@ First of your going to need a Raspberry Pi - a model 2 or later is preferable - 
 10. Download a tool like Putty (https://putty.org/) and connect to the Raspberry Pi from your desktop / laptop PC uing the IP address from the step above - the username 'pi' and the password you specified in step 4.
 10. Once you've into your Raspberry Pi - it's best practice to ensure all packages are up to date. Run `sudo apt-get update && sudo apt-get upgrade -y` to check for new packages and install any updates.
 
-## Wireguard (VPN) Setup
->WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. (https://www.wireguard.com/)## 1. Wireguard installation (Raspberry Pi 2 v1.2 and above)
+## Pi-hole Setup
 
-#### Wireguard Installation 
+See full installation instructions here - https://github.com/pi-hole/pi-hole/#one-step-automated-install
+
+For the quick and easy option -
+
+```console
+curl -sSL https://install.pi-hole.net | bash
+```
+
+## Wireguard (VPN) Setup
+>WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. (https://www.wireguard.com/)
+
+#### Wireguard Installation (Raspberry Pi 2 v1.2 and above)
 ```console
 sudo apt-get update
 sudo apt-get upgrade 
@@ -36,6 +46,11 @@ sudo apt-get update
 sudo apt-get install wireguard 
 sudo reboot
 ```
+From here follow the instructions from your VPN provider. I recommend https://mullvad.net/
+
+## Setup Unbound recursive DNS server
+
+See the guide from anudeepND (https://github.com/anudeepND) - here - https://github.com/anudeepND/pihole-unbound
 
 ## Privoxy (Proxy Server) Setup
 >Privoxy is a proxy server application used to route internet traffic. By empoying a proxy server on a machine connected to the internet via VPN - we get the benefits of that VPN connected. The same proxy server can be used across devices on your network - from computers, phones, tablets and more.
@@ -44,3 +59,14 @@ sudo reboot
 2. Open the configuration file with the command `sudo nano /etc/privoxy/config'.
 3. Look for the line `listen-address  127.0.0.0:8118` - this is the address and port the proxy server is running on.
 4. Update the listen address IP to match the IP address of the Raspberry Pi server you are connected to.
+5. Restart the Privoxy service with `sudo service privoxy restart`
+
+## Final setup
+
+#### Network Wide Ad-blocking
+
+Set your router primary DNS settings to the IP address of your Raspberry Pi server. All request made by devices on the network will be resolved via the Unbound DNS resolver and adverts blocked by Pi-hole.
+
+### VPN Proxy Server
+
+With Privoxy running - your device acts as a proxy server than can be used by any device on the network. Configure your application to use the proxy server at the address and port specified for the `listen-address` during Privoxy setup.
