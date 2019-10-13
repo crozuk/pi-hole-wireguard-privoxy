@@ -30,6 +30,8 @@ For the quick and easy option -
 curl -sSL https://install.pi-hole.net | bash
 ```
 
+<img src="https://i.imgur.com/7LN7cuN.png">
+
 ## Wireguard (VPN) Setup
 >WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. (https://www.wireguard.com/)
 
@@ -51,6 +53,14 @@ From here follow the instructions from your VPN provider. I recommend https://mu
 ## Setup Unbound recursive DNS server
 
 See the guide from anudeepND (https://github.com/anudeepND) - here - https://github.com/anudeepND/pihole-unbound
+
+Pi-Hole Config -
+
+<img src="https://i.imgur.com/DBHbprK.png">
+
+Recursive DNS Testing -
+
+<img src="https://i.imgur.com/1SmoXfX.png">
 
 ## Privoxy (Proxy Server) Setup
 >Privoxy is a proxy server application used to route internet traffic. By empoying a proxy server on a machine connected to the internet via VPN - we get the benefits of that VPN connected. The same proxy server can be used across devices on your network - from computers, phones, tablets and more.
