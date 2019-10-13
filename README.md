@@ -82,3 +82,9 @@ Set your router primary DNS settings to the IP address of your Raspberry Pi serv
 ### VPN Proxy Server
 
 With Privoxy running - your device acts as a proxy server than can be used by any device on the network. Configure your application to use the proxy server at the address and port specified for the `listen-address` during Privoxy setup.
+
+### Example Usage
+
+Using Chrome plugin 'Proxy SwitchyOmega' (https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) for proxy switching.
+
+<img src="https://i.imgur.com/TDSiUfO.png">
