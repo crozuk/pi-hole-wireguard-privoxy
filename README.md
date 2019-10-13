@@ -1,7 +1,7 @@
 # AdBlocking VPN Proxy Server (Pi-hole, Wireguard, Privoxy, Unbound)
 Pi-hole, Wireguard and Privoxy. Providing an ad-blocking VPN protected proxy server.
 
-Build your own internal ad blocker - also serving as a VPN protected proxy server. Give you anonmous, ad-free internet access across your home network. 
+Build your own internal ad blocker - also serving as a VPN protected proxy server. Gives you anonymous, ad-free internet access across your home network. 
 
 In this tutorial I'll detail setup using Wireguard - but the same approach can be used with the OpenVPN client.
 
