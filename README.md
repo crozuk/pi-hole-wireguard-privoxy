@@ -54,6 +54,10 @@ From here follow the instructions from your VPN provider. I recommend https://mu
 
 ## Setup Unbound recursive DNS server
 
+>Unbound is a validating, recursive, caching DNS resolver. It is designed to be fast and lean and incorporates modern features based on open standards.
+
+https://www.nlnetlabs.nl/projects/unbound/about/
+
 See the guide from anudeepND (https://github.com/anudeepND) - here - https://github.com/anudeepND/pihole-unbound
 
 Pi-Hole Config -
