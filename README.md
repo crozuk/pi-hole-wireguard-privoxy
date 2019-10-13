@@ -40,6 +40,8 @@ curl -sSL https://install.pi-hole.net | bash
 sudo apt-get update
 sudo apt-get upgrade 
 sudo apt-get install raspberrypi-kernel-headers
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7638D0442B90D010
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC
 echo "deb http://deb.debian.org/debian/ unstable main" | sudo tee --append /etc/apt/sources.list.d/unstable.list
 sudo apt-get install dirmngr 
 sudo apt-key adv --keyserver   keyserver.ubuntu.com --recv-keys 8B48AD6246925553 
