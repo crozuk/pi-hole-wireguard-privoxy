@@ -85,6 +85,10 @@ Recursive DNS Testing -
 
 Set your router's primary DNS server to the IP address of your Raspberry Pi server. All request made by devices on the network will be resolved via the Unbound DNS resolver and adverts blocked by Pi-hole.
 
+__Example Router Config. -__
+
+<img src="https://i.imgur.com/2Dmn5br.png">
+
 ### VPN Proxy Server
 
 With Privoxy running, your device acts as a proxy server than can be used by any device on the network. Configure your application to use the proxy server at the address and port specified for the `listen-address` during Privoxy setup.
