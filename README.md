@@ -32,6 +32,8 @@ curl -sSL https://install.pi-hole.net | bash
 
 <img src="https://i.imgur.com/7LN7cuN.png">
 
+Recommended blocklist - <a href="https://github.com/crozuk/pi-hole-wireguard-privoxy/blob/master/blocklist.md">blocklist.md</a>
+
 ## Wireguard (VPN) Setup
 >WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. (https://www.wireguard.com/)
 
