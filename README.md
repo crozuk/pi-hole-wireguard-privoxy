@@ -98,3 +98,9 @@ With Privoxy running, your device acts as a proxy server than can be used by any
 Using Chrome plugin 'Proxy SwitchyOmega' (https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) for proxy switching.
 
 <img src="https://i.imgur.com/TDSiUfO.png">
+
+### Further reading...
+
+If you want to setup a Tor proxy server on the same Raspberry Pi - check ouy my instructions here -
+
+https://github.com/crozuk/pi-hole-wireguard-privoxy/blob/master/tor-proxy.md
