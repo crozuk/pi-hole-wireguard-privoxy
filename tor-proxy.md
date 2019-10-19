@@ -50,3 +50,5 @@ You've now got a proxy server running on your local network which allows any of 
 I recommend using a Chrome plugin called 'Proxy SwitchyOmega' (https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) for proxy switching - to quickly switch between proxy servers - and setup rules for auto switching. 
 
 <img src="https://blog.richardcrosby.co.uk/content/images/2019/10/6pxX9fi.png">
+<hr>
+<img src="https://i.imgur.com/N2IQJ7A.png">
