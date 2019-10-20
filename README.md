@@ -101,6 +101,6 @@ Using Chrome plugin 'Proxy SwitchyOmega' (https://chrome.google.com/webstore/det
 
 ### Further reading...
 
-If you want to setup a Tor proxy server on the same Raspberry Pi - check ouy my instructions here -
+If you want to setup a Tor proxy server on the same Raspberry Pi - check out my instructions here -
 
 https://github.com/crozuk/pi-hole-wireguard-privoxy/blob/master/tor-proxy.md
