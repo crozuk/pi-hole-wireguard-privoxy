@@ -17,7 +17,7 @@ First off, your're going to need a Raspberry Pi - a model 2 or later is preferab
 6. Selection option (5) 'INTERFACE OPTIONS' and select 'P2 SSH' from the list to enable SSH access to the Raspberry Pi.
 7. Enter the command `ifconfig` to reveal network information - an 'inet' value will be shown your connected network adapters - make note of the relevant number - you'll need this to connect remotely to the Raspberry Pi.
 9. Ideally, you'll want to set this as a reserved (fixed) IP for this machine via your router configuration page.
-10. Download a tool like Putty (https://putty.org/) and connect to the Raspberry Pi from your desktop / laptop PC using the IP address from the step above - the username 'pi' and the password you specified in step 4.
+10. Download a tool like Putty (<https://putty.org/>) and connect to the Raspberry Pi from your desktop / laptop PC using the IP address from the step above - the username 'pi' and the password you specified in step 4.
 10. Once you've logged into your Raspberry Pi, it's best practice to ensure all packages are up to date. Run `sudo apt-get update && sudo apt-get upgrade -y` to check for new packages and install any updates.
 
 ## Pi-hole Setup
