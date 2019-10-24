@@ -1,4 +1,7 @@
 # AdBlocking VPN Proxy Server (Pi-hole, Wireguard, Privoxy, Unbound)
+
+Note - Pages version here - <https://crozuk.github.io/pi-hole-wireguard-privoxy/>
+
 Pi-hole, Wireguard and Privoxy. Providing an ad-blocking VPN protected proxy server.
 
 Build your own internal ad blocker - also serving as a VPN protected proxy server. Gives you anonymous, ad-free internet access across your home network. 
@@ -77,4 +80,4 @@ Using Chrome plugin ‘Proxy SwitchyOmega’ (<https://chrome.google.com/webstor
 
 If you want to setup a Tor proxy server on the same Raspberry Pi - check out my instructions here -
 
-<https://github.com/crozuk/pi-hole-wireguard-privoxy/blob/master/tor-proxy.md>
+<https://crozuk.github.io/pi-hole-wireguard-privoxy/tor-proxy>
