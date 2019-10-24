@@ -7,8 +7,8 @@ You’ll want a plug-in or settings change to disable JavaScript - and may want 
 
 Before we start any project -
 
-sudo apt-get update
-sudo apt-get upgrade
+	sudo apt-get update
+	sudo apt-get upgrade
 
 ## Installing Tor
 How to install the Tor software on your Raspberry Pi -
@@ -28,7 +28,7 @@ We need to configure Tor to open a SOCKS proxy on a port of our choosing.
 
 	`sudo nano /etc/tor/torrc`
 
-2. Scroll to lines 18 and 19 which be default with be commented out.
+2. Scroll to lines 18 and 19 which by default will be commented out.
 
 3. Uncomment lines 18 and 19 and update accordingly -
   ```
@@ -47,7 +47,7 @@ We need to configure Tor to open a SOCKS proxy on a port of our choosing.
 
 You've now got a proxy server running on your local network which allows any of the machines in your home to access the internet anonymously and visit .onion sites.
 
-I recommend using a Chrome plugin called 'Proxy SwitchyOmega' (https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) for proxy switching - to quickly switch between proxy servers - and setup rules for auto switching. 
+I recommend using a Chrome plugin called [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) to quickly switch between proxy servers, and setup rules for auto switching. 
 
 <img src="https://blog.richardcrosby.co.uk/content/images/2019/10/6pxX9fi.png">
 <hr>
