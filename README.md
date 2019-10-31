@@ -35,6 +35,14 @@ curl -sSL https://install.pi-hole.net | bash
 
 <img src="https://i.imgur.com/7LN7cuN.png">
 
+## Network Configuration
+
+Access your router admin panel and update the 'DNS Server' fields with the IP address of your Pi-hole setup.
+
+<img src="https://i.imgur.com/2Dmn5br.png">
+
+You may also want to setup a backup DNS server in case of a failure with the Pi-hole system. I recommend [https://1.1.1.1/].
+
 Recommended blocklist - <a href="https://github.com/crozuk/pi-hole-wireguard-privoxy/blob/master/blocklist.md" target="_blank">blocklist.md</a>
 
 ## Wireguard (VPN) Setup
@@ -65,7 +73,9 @@ From here follow the instructions from your VPN provider. I recommend <https://m
 
 See the guide from anudeepND (<https://github.com/anudeepND>) - here - <https://github.com/anudeepND/pihole-unbound>
 
-<img src="https://i.imgur.com/2Dmn5br.png">
+Once installed - configure Pi-hole to use the local Unbound DNS resolver.
+
+<img src="https://i.imgur.com/K5cyl2p.png">
 
 ### VPN Proxy Server
 
